@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>MultiLingo Tables — Support</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Official support page for MultiLingo Tables. Contact, FAQ, restore purchases, and privacy info." />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  <style>
+    :root { --bg:#0e1116; --card:#161b22; --text:#e6edf3; --muted:#9da7b3; --brand:#30a46c; --accent:#58a6ff; --border:#2a2f36; }
+    html,body { margin:0; padding:0; background:var(--bg); color:var(--text);
+      font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Helvetica,Arial,sans-serif; line-height:1.55; }
+    .wrap { max-width:980px; margin:0 auto; padding:24px; }
+    header { padding:24px 0 10px; }
+    h1 { margin:0 0 6px; font-size:28px; }
+    h2 { margin:22px 0 10px; font-size:20px; }
+    p { margin:8px 0; color:var(--muted); }
+    .card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:18px; margin:12px 0; }
+    .row { display:flex; gap:12px; flex-wrap:wrap; align-items:center; }
+    a.btn { display:inline-block; padding:10px 14px; border-radius:10px; text-decoration:none; color:#fff; background:var(--accent); border:1px solid var(--border); }
+    a.btn.secondary { background:var(--brand); }
+    a.link { color:var(--accent); text-decoration:none; }
+    ul { margin:8px 0 0 18px; }
+    li { margin:6px 0; }
+    footer { margin:28px 0 12px; color:var(--muted); font-size:13px; }
+    code,kbd { background:#0b0f14; border:1px solid var(--border); border-radius:6px; padding:1px 6px; font-family:ui-monospace,Menlo,Monaco,monospace; }
+    .grid { display:grid; grid-template-columns:1fr; gap:12px; }
+    @media (min-width:760px) { .grid { grid-template-columns:1fr 1fr; } }
+    .select { background:var(--card); color:var(--text); border:1px solid var(--border); border-radius:10px; padding:8px 12px; }
+    .hint { font-size:13px; color:var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="row" style="justify-content:space-between">
+        <div>
+          <h1 data-i18n="title">MultiLingo Tables — Support</h1>
+          <p data-i18n="tagline">Official help page for the multiplication practice app. Quick answers, restore purchases, and contact options.</p>
+          <p class="hint" data-i18n="langs">Interface languages: English, Russian, German, Spanish, French, Ukrainian, Belarusian</p>
+          <div class="row" style="margin-top:10px">
+            <a class="btn" id="emailBtn" href="mailto:vanay.neytrino@gmail.com?subject=MultiLingo%20Tables%20Support" data-i18n="emailBtn">Email support</a>
+            <a class="btn secondary" id="tgBtn" href="https://t.me/+F0Sp1fv19ug0ZDky" rel="nofollow noopener" target="_blank" data-i18n="tgBtn">Telegram</a>
+          </div>
+        </div>
+        <div>
+          <label for="lang" class="hint" data-i18n="choose">Language</label><br/>
+          <select id="lang" class="select" aria-label="Language">
+            <option value="en">English</option>
+            <option value="ru">Русский</option>
+            <option value="de">Deutsch</option>
+            <option value="es">Español</option>
+            <option value="fr">Français</option>
+            <option value="uk">Українська</option>
+            <option value="be">Беларуская</option>
+          </select>
+        </div>
+      </div>
+    </header>
+
+    <section class="card">
+      <h2 data-i18n="restoreTitle">Restore purchases</h2>
+      <p data-i18n="restoreP1">If you changed device or reinstalled the app, use the <kbd>Restore Purchases</kbd> button in the app’s main menu.</p>
+      <ul>
+        <li data-i18n="restoreLi1">Ensure you’re signed in with the same Apple ID used for the original purchase.</li>
+        <li data-i18n="restoreLi2">If the restore fails, reboot the device and try again with a stable internet connection.</li>
+      </ul>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2 data-i18n="faqTitle">FAQ</h2>
+        <ul>
+          <li><strong data-i18n="q1">Does it work offline?</strong><br/><span data-i18n="a1">Yes. Practice and tests work without internet; progress is stored on the device.</span></li>
+          <li><strong data-i18n="q2">Where is my progress stored?</strong><br/><span data-i18n="a2">All results are saved locally on the device. Removing the app deletes local data.</span></li>
+          <li><strong data-i18n="q3">What statistics are available?</strong><br/><span data-i18n="a3">Accuracy, average time per answer, streaks, and weak topics by multiplier.</span></li>
+          <li><strong data-i18n="q4">How long is a practice session?</strong><br/><span data-i18n="a4">Short sessions that typically take a few minutes, depending on speed.</span></li>
+          <li><strong data-i18n="q5">How to contact support?</strong><br/><span data-i18n="a5">Use the buttons above for email or Telegram. Include app version and device model.</span></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2 data-i18n="trTitle">Troubleshooting</h2>
+        <ul>
+          <li><strong data-i18n="tr1">No sound or haptics</strong><br/><span data-i18n="tr1a">Check system mute and haptics settings, then restart the app.</span></li>
+          <li><strong data-i18n="tr2">App language</strong><br/><span data-i18n="tr2a">Set the preferred language inside the app settings; restart if needed.</span></li>
+          <li><strong data-i18n="tr3">Crashes or freezes</strong><br/><span data-i18n="tr3a">Update to the latest version and ensure enough free storage.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 data-i18n="privacyTitle">Privacy & data</h2>
+      <div id="pp" data-i18n="privacyFull">
+        <!-- Filled by i18n -->
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 data-i18n="contactsTitle">Contacts</h2>
+      <p><span data-i18n="emailLabel">Email</span>: <a class="link" id="emailLink" href="mailto:vanay.neytrino@gmail.com">vanay.neytrino@gmail.com</a></p>
+      <p><span data-i18n="tgLabel">Telegram</span>: <a class="link" id="tgLink" href="https://t.me/@MultiLingoTables" target="_blank" rel="nofollow noopener">@your_group_username</a></p>
+      <p class="hint" data-i18n="contactHint">When contacting support, include device model, iOS version, app version, and steps to reproduce.</p>
+    </section>
+
+    <footer>
+      <p>© 2025 MultiLingo Tables</p>
+    </footer>
+  </div>
+
+  <script>
+    // CONFIG: set your public Telegram group username (https://t.me/<username>)
+    const CONTACT = {
+      email: 'vanay.neytrino@gmail.com',
+      tg: 'MultiLingoTables'
+    };
+
+    const T = {
+      en: {
+        title: 'MultiLingo Tables — Support',
+        tagline: 'Official help page for the multiplication practice app. Quick answers, restore purchases, and contact options.',
+        langs: 'Interface languages: English, Russian, German, Spanish, French, Ukrainian, Belarusian',
+        choose: 'Language',
+        emailBtn: 'Email support',
+        tgBtn: 'Telegram',
+        restoreTitle: 'Restore purchases',
+        restoreP1: 'If you changed device or reinstalled the app, use the <kbd>Restore Purchases</kbd> button in the app’s main menu.',
+        restoreLi1: 'Ensure you’re signed in with the same Apple ID used for the original purchase.',
+        restoreLi2: 'If the restore fails, reboot the device and try again with a stable internet connection.',
+        faqTitle: 'FAQ',
+        q1: 'Does it work offline?', a1: 'Yes. Practice and tests work without internet; progress is stored on the device.',
+        q2: 'Where is my progress stored?', a2: 'All results are saved locally on the device. Removing the app deletes local data.',
+        q3: 'What statistics are available?', a3: 'Accuracy, average time per answer, streaks, and weak topics by multiplier.',
+        q4: 'How long is a practice session?', a4: 'Short sessions that typically take a few minutes, depending on speed.',
+        q5: 'How to contact support?', a5: 'Use the buttons above for email or Telegram. Include app version and device model.',
+        trTitle: 'Troubleshooting',
+        tr1: 'No sound or haptics', tr1a: 'Check system mute and haptics settings, then restart the app.',
+        tr2: 'App language', tr2a: 'Set the preferred language inside the app settings; restart if needed.',
+        tr3: 'Crashes or freezes', tr3a: 'Update to the latest version and ensure enough free storage.',
+        privacyTitle: 'Privacy & data',
+        // Inline simple Privacy Policy (text, not a link)
+        privacyFull: `
+          <p><strong>Summary.</strong> The app stores practice and test results on your device and does not use third‑party ads.</p>
+          <p><strong>Data we process.</strong> On‑device results (e.g., accuracy, average time, streaks) saved locally for your convenience. We do not collect analytics or personal identifiers from the app.</p>
+          <p><strong>Purchases.</strong> Payments are processed by Apple via your Apple ID. We do not see or store payment information.</p>
+          <p><strong>Support.</strong> If you contact us by email or Telegram, your message and contact details are used only to resolve the request and are deleted when no longer needed.</p>
+          <p><strong>Children’s privacy.</strong> The app is designed for families. Do not submit personal information in support messages without a parent/guardian.</p>
+          <p><strong>Your choices.</strong> You can delete app data by removing the app. For purchases, use Settings → Apple ID → Subscriptions.</p>
+          <p><strong>Changes.</strong> Updates to this policy will be posted on this page. Effective date: 2025‑09‑28.</p>
+        `,
+        contactsTitle: 'Contacts',
+        emailLabel: 'Email', tgLabel: 'Telegram',
+        contactHint: 'When contacting support, include device model, iOS version, app version, and steps to reproduce.'
+      },
+      ru: {
+        title: 'MultiLingo Tables — Поддержка',
+        tagline: 'Официальная страница помощи. Быстрые ответы, восстановление покупок и контакты.',
+        langs: 'Языки интерфейса: русский, английский, немецкий, испанский, французский, украинский, белорусский',
+        choose: 'Язык',
+        emailBtn: 'Написать в поддержку',
+        tgBtn: 'Telegram',
+        restoreTitle: 'Восстановление покупок',
+        restoreP1: 'Если сменили устройство или переустанавливали приложение, используйте кнопку <kbd>Восстановить покупки</kbd> в главном меню.',
+        restoreLi1: 'Убедитесь, что вошли под тем же Apple ID, с которого оформлялась покупка.',
+        restoreLi2: 'Если не удалось восстановить, перезагрузите устройство и повторите при стабильном интернете.',
+        faqTitle: 'FAQ',
+        q1: 'Работает ли офлайн?', a1: 'Да. Тренировки и тесты работают без интернета; прогресс хранится на устройстве.',
+        q2: 'Где хранится прогресс?', a2: 'Все результаты сохраняются локально. Удаление приложения удалит локальные данные.',
+        q3: 'Какая статистика доступна?', a3: 'Точность, среднее время ответа, серии и слабые темы по множителям.',
+        q4: 'Сколько длится сессия?', a4: 'Короткие сессии на несколько минут — зависит от скорости решения.',
+        q5: 'Как связаться с поддержкой?', a5: 'Нажмите кнопки выше (email или Telegram). Укажите версию приложения и модель устройства.',
+        trTitle: 'Диагностика',
+        tr1: 'Нет звука или вибро', tr1a: 'Проверьте беззвучный режим и настройки вибро, перезапустите приложение.',
+        tr2: 'Язык приложения', tr2a: 'Выберите язык в настройках приложения; при необходимости перезапустите.',
+        tr3: 'Зависания/вылеты', tr3a: 'Обновите приложение и освободите место в памяти.',
+        privacyTitle: 'Конфиденциальность и данные',
+        privacyFull: `
+          <p><strong>Кратко.</strong> Приложение хранит результаты тренировок и тестов на вашем устройстве и не использует стороннюю рекламу.</p>
+          <p><strong>Обрабатываемые данные.</strong> Локальные результаты (точность, среднее время, серии), сохраняемые на устройстве. Мы не собираем аналитику и персональные идентификаторы из приложения.</p>
+          <p><strong>Покупки.</strong> Платежи обрабатывает Apple через вашу учётную запись Apple ID. Мы не видим и не храним платёжные данные.</p>
+          <p><strong>Поддержка.</strong> При обращении по email или в Telegram сообщение и контакты используются только для решения запроса и удаляются, когда больше не нужны.</p>
+          <p><strong>Дети.</strong> Приложение рассчитано на семейное использование. Не отправляйте персональные данные в сообщения поддержки без участия родителя/опекуна.</p>
+          <p><strong>Ваш выбор.</strong> Можно удалить данные, удалив приложение. Управление подписками — в Настройки → Apple ID → Подписки.</p>
+          <p><strong>Изменения.</strong> Обновления политики публикуются на этой странице. Дата вступления в силу: 28.09.2025.</p>
+        `,
+        contactsTitle: 'Контакты',
+        emailLabel: 'Почта', tgLabel: 'Telegram',
+        contactHint: 'Пожалуйста, указывайте модель устройства, версию iOS, версию приложения и шаги для воспроизведения.'
+      },
+      de: {
+        title: 'MultiLingo Tables — Support',
+        tagline: 'Offizielle Hilfeseite. Schnelle Antworten, Käufe wiederherstellen und Kontakt.',
+        langs: 'Sprachen: Deutsch, Englisch, Russisch, Spanisch, Französisch, Ukrainisch, Belarussisch',
+        choose: 'Sprache',
+        emailBtn: 'E‑Mail‑Support',
+        tgBtn: 'Telegram',
+        restoreTitle: 'Käufe wiederherstellen',
+        restoreP1: 'Bei Gerätewechsel/Neuinstallation nutzen Sie <kbd>Einkäufe wiederherstellen</kbd> im Hauptmenü.',
+        restoreLi1: 'Melden Sie sich mit derselben Apple‑ID an wie beim Kauf.',
+        restoreLi2: 'Bei Fehler Gerät neu starten und mit stabiler Verbindung erneut versuchen.',
+        faqTitle: 'FAQ',
+        q1: 'Funktioniert es offline?', a1: 'Ja. Übungen und Tests funktionieren offline; Fortschritt wird lokal gespeichert.',
+        q2: 'Wo werden Daten gespeichert?', a2: 'Alle Ergebnisse lokal auf dem Gerät. Löschen der App entfernt lokale Daten.',
+        q3: 'Welche Statistik?', a3: 'Genauigkeit, Ø‑Zeit, Serien und schwache Themen nach Multiplikator.',
+        q4: 'Wie lang ist eine Sitzung?', a4: 'Kurze Sitzungen von wenigen Minuten — je nach Tempo.',
+        q5: 'Kontakt zum Support?', a5: 'Nutzen Sie die Buttons oben. Bitte App‑Version und Gerät angeben.',
+        trTitle: 'Fehlerbehebung',
+        tr1: 'Kein Ton/Haptik', tr1a: 'Stummschaltung/Haptik prüfen und App neu starten.',
+        tr2: 'App‑Sprache', tr2a: 'Sprache in den App‑Einstellungen setzen; ggf. neu starten.',
+        tr3: 'Abstürze/Hänger', tr3a: 'App aktualisieren und Speicher prüfen.',
+        privacyTitle: 'Datenschutz & Daten',
+        privacyFull: `
+          <p><strong>Kurz.</strong> Die App speichert Übungs‑ und Testergebnisse auf Ihrem Gerät und nutzt keine Drittanbieter‑Werbung.</p>
+          <p><strong>Daten.</strong> Lokale Ergebnisse (Genauigkeit, Ø‑Zeit, Serien), die auf dem Gerät gespeichert werden. Es werden keine Analysen oder persönlichen Kennungen aus der App erhoben.</p>
+          <p><strong>Käufe.</strong> Zahlungen laufen über Apple (Apple ID). Wir sehen oder speichern keine Zahlungsdaten.</p>
+          <p><strong>Support.</strong> Bei Kontakt per E‑Mail/Telegram nutzen wir Ihre Nachricht nur zur Bearbeitung und löschen sie anschließend.</p>
+          <p><strong>Kinder.</strong> Für Familien ausgelegt. Keine personenbezogenen Daten in Support‑Nachrichten ohne Erziehungsberechtigte.</p>
+          <p><strong>Ihre Wahl.</strong> Daten können durch Löschen der App entfernt werden. Abos in Einstellungen → Apple ID → Abonnements.</p>
+          <p><strong>Änderungen.</strong> Aktualisierungen werden hier veröffentlicht. Gültig ab: 28.09.2025.</p>
+        `,
+        contactsTitle: 'Kontakt',
+        emailLabel: 'E‑Mail', tgLabel: 'Telegram',
+        contactHint: 'Bitte Geräte‑Modell, iOS‑Version, App‑Version und Schritte angeben.'
+      },
+      es: {
+        title: 'MultiLingo Tables — Soporte',
+        tagline: 'Página oficial de ayuda. Respuestas rápidas, restaurar compras y contacto.',
+        langs: 'Idiomas: español, inglés, ruso, alemán, francés, ucraniano, bielorruso',
+        choose: 'Idioma',
+        emailBtn: 'Soporte por email',
+        tgBtn: 'Telegram',
+        restoreTitle: 'Restaurar compras',
+        restoreP1: 'Si cambiaste de dispositivo o reinstalaste, usa <kbd>Restaurar compras</kbd> en el menú principal.',
+        restoreLi1: 'Usa el mismo Apple ID de la compra original.',
+        restoreLi2: 'Si falla, reinicia el dispositivo y prueba de nuevo con buena conexión.',
+        faqTitle: 'FAQ',
+        q1: '¿Funciona sin internet?', a1: 'Sí. Prácticas y tests funcionan offline; el progreso se guarda en el dispositivo.',
+        q2: '¿Dónde se guarda el progreso?', a2: 'Todos los resultados se guardan localmente. Al borrar la app se eliminan los datos.',
+        q3: '¿Qué estadísticas hay?', a3: 'Precisión, tiempo medio, rachas y temas débiles.',
+        q4: '¿Duración de una sesión?', a4: 'Sesiones cortas de pocos minutos, según la velocidad.',
+        q5: '¿Cómo contacto soporte?', a5: 'Botones arriba (email o Telegram) e indica versión y dispositivo.',
+        trTitle: 'Solución de problemas',
+        tr1: 'Sin sonido/háptica', tr1a: 'Comprueba silencio y ajustes; reinicia la app.',
+        tr2: 'Idioma de la app', tr2a: 'Cámbialo en ajustes; reinicia si es necesario.',
+        tr3: 'Cierres/bloqueos', tr3a: 'Actualiza y libera espacio.',
+        privacyTitle: 'Privacidad y datos',
+        privacyFull: `
+          <p><strong>Resumen.</strong> La app guarda resultados en tu dispositivo y no usa anuncios de terceros.</p>
+          <p><strong>Datos.</strong> Resultados locales (precisión, tiempo medio, rachas); no recopilamos analíticas ni identificadores personales desde la app.</p>
+          <p><strong>Compras.</strong> Pagos procesados por Apple (Apple ID); no vemos ni guardamos datos de pago.</p>
+          <p><strong>Soporte.</strong> Si nos contactas, usamos el mensaje solo para ayudarte y luego lo eliminamos.</p>
+          <p><strong>Niños.</strong> Diseñado para familias; no envíes datos personales sin un adulto.</p>
+          <p><strong>Opciones.</strong> Elimina datos borrando la app. Gestiona suscripciones en Ajustes → Apple ID → Suscripciones.</p>
+          <p><strong>Cambios.</strong> Publicaremos actualizaciones aquí. Vigente desde: 28/09/2025.</p>
+        `,
+        contactsTitle: 'Contactos',
+        emailLabel: 'Email', tgLabel: 'Telegram',
+        contactHint: 'Incluye modelo, iOS, versión y pasos para reproducir.'
+      },
+      fr: {
+        title: 'MultiLingo Tables — Assistance',
+        tagline: 'Page d’aide officielle. Réponses rapides, restauration des achats et contact.',
+        langs: 'Langues : français, anglais, russe, allemand, espagnol, ukrainien, biélorusse',
+        choose: 'Langue',
+        emailBtn: 'Support par email',
+        tgBtn: 'Telegram',
+        restoreTitle: 'Restaurer les achats',
+        restoreP1: 'Après réinstallation/changement d’appareil, utilisez <kbd>Restaurer les achats</kbd> dans le menu principal.',
+        restoreLi1: 'Identifiez‑vous avec le même identifiant Apple que l’achat initial.',
+        restoreLi2: 'En cas d’échec, redémarrez l’appareil et réessayez.',
+        faqTitle: 'FAQ',
+        q1: 'Hors ligne ?', a1: 'Oui. Exercices et tests hors ligne ; résultats stockés sur l’appareil.',
+        q2: 'Stockage ?', a2: 'Local sur l’appareil. La suppression de l’app efface les données locales.',
+        q3: 'Statistiques ?', a3: 'Précision, temps moyen, séries, sujets faibles.',
+        q4: 'Durée ?', a4: 'Courtes sessions de quelques minutes.',
+        q5: 'Contacter ?', a5: 'Boutons ci‑dessus (email/Telegram) avec version et appareil.',
+        trTitle: 'Dépannage',
+        tr1: 'Pas de son/haptique', tr1a: 'Vérifiez le mode silencieux et redémarrez.',
+        tr2: 'Langue', tr2a: 'Changez‑la dans les réglages ; redémarrez si besoin.',
+        tr3: 'Crashs', tr3a: 'Mettez à jour et libérez de l’espace.',
+        privacyTitle: 'Confidentialité & données',
+        privacyFull: `
+          <p><strong>Résumé.</strong> L’app enregistre les résultats sur votre appareil et n’utilise pas de pubs tierces.</p>
+          <p><strong>Données.</strong> Résultats locaux (précision, temps moyen, séries) ; pas d’analytique ni d’identifiants personnels collectés depuis l’app.</p>
+          <p><strong>Achats.</strong> Gérés par Apple (Apple ID) ; aucune donnée de paiement chez nous.</p>
+          <p><strong>Support.</strong> Vos messages servent uniquement à l’assistance puis sont supprimés.</p>
+          <p><strong>Enfants.</strong> Conçu pour les familles ; pas d’infos perso sans adulte.</p>
+          <p><strong>Choix.</strong> Supprimez les données en supprimant l’app. Abonnements dans Réglages → Apple ID → Abonnements.</p>
+          <p><strong>Modifications.</strong> Publiées ici. Date d’effet : 28/09/2025.</p>
+        `,
+        contactsTitle: 'Contacts',
+        emailLabel: 'Email', tgLabel: 'Telegram',
+        contactHint: 'Indiquez modèle, iOS, version et étapes.'
+      },
+      uk: {
+        title: 'MultiLingo Tables — Підтримка',
+        tagline: 'Офіційна сторінка допомоги. Швидкі відповіді, відновлення покупок та контакти.',
+        langs: 'Мови інтерфейсу: українська, англійська, російська, німецька, іспанська, французька, білоруська',
+        choose: 'Мова',
+        emailBtn: 'Написати в підтримку',
+        tgBtn: 'Telegram',
+        restoreTitle: 'Відновлення покупок',
+        restoreP1: 'Скористайтеся кнопкою <kbd>Відновити покупки</kbd> у головному меню.',
+        restoreLi1: 'Увійдіть під тим самим Apple ID, з якого була покупка.',
+        restoreLi2: 'Перезапустіть пристрій і повторіть при стабільному інтернеті.',
+        faqTitle: 'Питання‑Відповіді',
+        q1: 'Працює офлайн?', a1: 'Так. Тренування і тести працюють без інтернету; прогрес зберігається локально.',
+        q2: 'Де дані?', a2: 'Локально на пристрої. Видалення додатка стирає дані.',
+        q3: 'Статистика?', a3: 'Точність, середній час, серії, слабкі теми.',
+        q4: 'Тривалість?', a4: 'Кілька хвилин, залежно від швидкості.',
+        q5: 'Контакт?', a5: 'Кнопки вище (email/Telegram), додайте версію й пристрій.',
+        trTitle: 'Усунення несправностей',
+        tr1: 'Немає звуку/тактильних', tr1a: 'Перевірте беззвучний режим і перезапустіть.',
+        tr2: 'Мова', tr2a: 'Змініть у налаштуваннях; перезапустіть за потреби.',
+        tr3: 'Зависання', tr3a: 'Оновіть і звільніть місце.',
+        privacyTitle: 'Конфіденційність і дані',
+        privacyFull: `
+          <p><strong>Коротко.</strong> Додаток зберігає результати на пристрої та не використовує сторонню рекламу.</p>
+          <p><strong>Дані.</strong> Локальні результати (точність, середній час, серії); аналітика та ідентифікатори з додатка не збираються.</p>
+          <p><strong>Покупки.</strong> Платежі обробляє Apple (Apple ID); ми не зберігаємо платіжні дані.</p>
+          <p><strong>Підтримка.</strong> Повідомлення використовуються лише для допомоги та видаляються коли непотрібні.</p>
+          <p><strong>Діти.</strong> Для сімей; не надсилайте персональні дані без дорослого.</p>
+          <p><strong>Вибір.</strong> Видаліть дані, видаливши додаток. Керування підписками — Налаштування → Apple ID → Підписки.</p>
+          <p><strong>Зміни.</strong> Оновлення буде тут. Дата чинності: 28.09.2025.</p>
+        `,
+        contactsTitle: 'Контакти',
+        emailLabel: 'Пошта', tgLabel: 'Telegram',
+        contactHint: 'Додайте модель, iOS, версію та кроки.'
+      },
+      be: {
+        title: 'MultiLingo Tables — Падтрымка',
+        tagline: 'Афіцыйная старонка дапамогі. Хуткія адказы, аднаўленне пакупак і кантакты.',
+        langs: 'Мовы інтэрфейсу: беларуская, руская, украінская, англійская, нямецкая, іспанская, французская',
+        choose: 'Мова',
+        emailBtn: 'Напісаць у падтрымку',
+        tgBtn: 'Telegram',
+        restoreTitle: 'Аднаўленне пакупак',
+        restoreP1: 'Націсніце <kbd>Аднавіць пакупкі</kbd> у галоўным меню.',
+        restoreLi1: 'Выкарыстоўвайце той жа Apple ID, што і пры пакупцы.',
+        restoreLi2: 'Перазапусціце прыладу і паўтарыце пры стабільным інтэрнэце.',
+        faqTitle: 'Пытанні і адказы',
+        q1: 'Ці працуе офлайн?', a1: 'Так. Трэніроўкі і тэсты — без інтэрнэту; прагрэс лакальна.',
+        q2: 'Дзе даныя?', a2: 'На прыладзе. Выдаленне праграмы сцірае лакальныя даныя.',
+        q3: 'Статыстыка?', a3: 'Дакладнасць, сярэдні час, серыі, слабыя тэмы.',
+        q4: 'Даўжыня сесіі?', a4: 'Некалькі хвілін — залежыць ад хуткасці.',
+        q5: 'Кантакт?', a5: 'Кнопкі вышэй (email/Telegram); пазначайце версію і прыладу.',
+        trTitle: 'Выпраўленне праблем',
+        tr1: 'Няма гуку/вібрацыі', tr1a: 'Праверце рэжым без гуку і перазапусціце.',
+        tr2: 'Мова', tr2a: 'Змяніце ў наладах; пры патрэбе перазапусціце.',
+        tr3: 'Завісае', tr3a: 'Абнавіце і вызваліце месца.',
+        privacyTitle: 'Прыватнасць і даныя',
+        privacyFull: `
+          <p><strong>Каротка.</strong> Вынікі захоўваюцца на прыладзе; старонняй рэкламы няма.</p>
+          <p><strong>Даныя.</strong> Лакальныя вынікі (дакладнасць, сярэдні час, серыі); аналітыка і ідэнтыфікатары з дадатку не збіраюцца.</p>
+          <p><strong>Плацяжы.</strong> Апрацоўваюцца Apple (Apple ID); мы не бачым і не захоўваем плацежныя даныя.</p>
+          <p><strong>Падтрымка.</strong> Паведамленні выкарыстоўваюцца толькі для дапамогі і выдаляюцца, калі больш не патрэбныя.</p>
+          <p><strong>Дзеці.</strong> Для сем’яў; не дасылайце персанальныя даныя без дарослага.</p>
+          <p><strong>Выбар.</strong> Выдаліце даныя, выдаліўшы праграму. Падпіскі — у Налады → Apple ID → Падпіскі.</p>
+          <p><strong>Змены.</strong> Абнаўленні будуць тут. Дата: 28.09.2025.</p>
+        `,
+        contactsTitle: 'Кантакты',
+        emailLabel: 'Пошта', tgLabel: 'Telegram',
+        contactHint: 'Пазначайце прыладу, iOS, версію і крокі.'
+      }
+    };
+
+    // i18n engine
+    const els = () => document.querySelectorAll('[data-i18n]');
+    function applyLang(lang) {
+      const dict = T[lang] || T.en;
+      document.documentElement.lang = lang;
+      els().forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (!key) return;
+        const val = dict[key];
+        if (val == null) return;
+        if (typeof val === 'string' && val.includes('<')) el.innerHTML = val; else el.textContent = val;
+      });
+      // Update contacts/links
+      document.getElementById('emailBtn').href = `mailto:${CONTACT.email}?subject=MultiLingo%20Tables%20Support`;
+      document.getElementById('emailLink').href = `mailto:${CONTACT.email}`;
+      document.getElementById('emailLink').textContent = CONTACT.email;
+      document.getElementById('tgBtn').href = `https://t.me/${CONTACT.tg}`;
+      document.getElementById('tgLink').href = `https://t.me/${CONTACT.tg}`;
+      document.getElementById('tgLink').textContent = `@${CONTACT.tg}`;
+      localStorage.setItem('ml_lang', lang);
+    }
+
+    (function initLang(){
+      const sel = document.getElementById('lang');
+      const stored = localStorage.getItem('ml_lang');
+      const nav = (navigator.language || 'en').slice(0,2).toLowerCase();
+      const start = stored || (['en','ru','de','es','fr','uk','be'].includes(nav) ? nav : 'en');
+      sel.value = start;
+      applyLang(start);
+      sel.addEventListener('change', e => applyLang(e.target.value));
+    })();
+  </script>
+</body>
+</html>
